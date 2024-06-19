@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Define o estilo do body, centralizando o conteúdo vertical e horizontalmente */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #11b497; /* Cor de fundo para o corpo */
+    margin: 0;
+}
+
+/* Define o estilo da div com a classe "screen" */
+.screen {
+    background-color: #11b497; /* Cor de fundo da div */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Alinha o conteúdo no centro */
+}
+
+/* Define o estilo do título h1 */
+h1 {
+    font-size: 40px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto no centro */
+    margin-bottom: 100; /* Remove a margem inferior */
+}
+
+/* Define o estilo do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Define a largura total */
+    max-width: 500px; /* Define a largura máxima */
+    padding: 30px; /* Espaçamento interno */
+    background-color: #11b497; /* Cor de fundo do formulário */
+    border-radius: 10px; /* Arredonda os cantos */
+    margin-top: 40px; /* Adiciona margem superior */
+}
+
+/* Define o estilo das labels */
+label {
+    margin-top: 25px; /* Adiciona margem superior */
+    font-size: 20px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto no centro */
+    width: 500%; /* Define a largura total */
+    /* Comentário: A largura horizontal da label pode ser aumentada aqui */
+}
+
+/* Define o estilo dos selects */
+select {
+    margin-top: 15px; /* Adiciona margem superior */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Define a largura total */
+    max-width: 300px; /* Define a largura máxima */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 1px solid #ddd; /* Adiciona borda */
+    border-radius: 5px; /* Arredonda os cantos */
+}
+
+/* Define o estilo dos botões */
+button {
+    margin-top: 80px; /* Adiciona margem superior */
+    padding: 15px 120px; /* Espaçamento interno */
+    background-color: #000; /* Cor de fundo do botão */
+    border: white; /* Adiciona borda branca */
+    border-radius: 10px; /* Arredonda os cantos */
+    color: #fff; /* Cor do texto */
+    font-size: 20px; /* Tamanho da fonte */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+}
+
+/* Define o estilo dos botões ao passar o mouse */
+button:hover {
+    background-color: #333; /* Altera a cor de fundo */
+}
+
+/* Define o estilo da imagem */
+img {
+    position: absolute; /* Posiciona a imagem de forma absoluta */
+    top: 0; /* Coloca a imagem no topo da página */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para a imagem ficar centralizada */
+    max-width: 250px; /* Define a largura máxima */
+    height: auto; /* Mantém a proporção da imagem */
+    z-index: 1; /* Coloca a imagem acima do conteúdo */
+}

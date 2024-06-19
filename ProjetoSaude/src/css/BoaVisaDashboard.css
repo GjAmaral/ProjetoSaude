@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #343434;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #1f1f1f;
+}
+
+.dashboard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: #343434;
+    border: 1px solid #343434;
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.dashboard-header h1 {
+    flex-grow: 1;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-photo {
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    filter: grayscale(100%) brightness(1.5) sepia(1) hue-rotate(200deg);
+}
+
+.user-name {
+    font-size: 1em;
+    color: white;
+}
+
+.dashboard-main {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar-menu {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alterado para distribuir os itens verticalmente */
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    margin-right: 10px;
+    height: 95%;
+    gap: 20px;
+    border: 1px solid #343434;
+    padding: 10px;
+}
+.sidebar-menu button {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sidebar-menu button img {
+    width: 20px;
+    height: 20px;
+}
+
+.dashboard-left {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    gap: 20px;
+    background-color: #1f1f1f;
+}
+
+.dashboard-right {
+    flex: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-section {
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #343434;
+    flex: 1;
+    min-width: 350px;
+    min-height: 200px;
+}
+
+.dashboard-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.dashboard-section p, .dashboard-section ul, .dashboard-section ol {
+    font-size: 1em;
+    color: white;
+}
+
+.dashboard-section ul, .dashboard-section ol {
+    padding-left: 20px;
+}
+
+.dashboard-section ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 40px;
+    margin-bottom: 15px;
+    border: 1px solid #343434;
+    border-radius: 8px;
+}
+
+
+.patient-photo {
+    height: 80px; /* Reduzido de 50px para 45px */
+    width: 80px; /* Adicionado para manter proporção */
+    border-radius: 50%;
+    margin-right: 10px;
+    filter: grayscale(100%) brightness(1.5) sepia(1) hue-rotate(200deg);
+    padding: 3px; /* Adicionado padding para aumentar o tamanho */
+}
+
+.patient-1 {
+    filter: none;
+    fill: red;
+}
+
+.patient-2 {
+    filter: none;
+    fill: orange;
+}
+
+.patient-3 {
+    filter: none;
+    fill: yellow;
+}
+
+.patient-4 {
+    filter: none;
+    fill: green;
+}
+
+.patient-5 {
+    filter: none;
+    fill: blue;
+}
+
+.priority {
+    margin-left: 50px;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+#atendimentos-recentes {
+    height: 100%;
+    width: 30%;
+}
+
+.dashboard-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.us {
+    margin-left: auto; /* Move a imagem para a direita */
+}
+
+.dashboard-dados-gerais ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+}
+
+.dashboard-dados-gerais li {
+    border: 1px solid #343434;
+    border-radius: 8px;
+    padding: 10px;
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.dashboard-dados-gerais h3 {
+    font-size: 2.0em; /* ou outro valor que você considere adequado */
+    color: white;
+}
+
+.dashboard-dados-gerais p {
+    font-size: 2.2em; /* ou outro valor que você considere adequado */
+    color: white;
+}
+
+.Classificação-Risco ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+
+.Classificação-Risco ul li {
+    flex: 0 0 calc(47% - 100px); /* Ajuste para duas colunas */
+    padding: 50px;
+    border: 1px solid #343434;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Classificação-Risco li img {
+    order: 2;
+}
+
+.Classificação-Risco ul li h3,
+.Classificação-Risco ul li p {
+    order: 1;
+    
+}
+
+#menu, #dashboard {
+    order: 1; /* Altera a ordem para que esses itens fiquem no topo */
+}
+
+#preferencias, #meu-perfil, #configuracoes {
+    order: 2; /* Altera a ordem para que esses itens fiquem no meio */
+}
+
+#suporte, #suportehelp {
+    order: 3; /* Altera a ordem para que esses itens fiquem na parte debaixo */
+}
+
+.dashboard-right ul li {
+    padding: 40px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 5px; /* Ajuste o valor conforme necessário */
+}
+
